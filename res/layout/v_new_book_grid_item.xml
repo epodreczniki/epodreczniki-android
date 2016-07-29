@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:epo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <pl.epodreczniki.view.FixedAspectRatioFrameLayout
+            android:id="@+id/imageFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            epo:ratio="1.41" >
+
+            <pl.epodreczniki.view.ImageProgressBar
+                android:id="@+id/vblgi_iv_bookCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/cover" />
+
+            <ProgressBar
+                android:id="@+id/vblgi_pb_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <pl.epodreczniki.view.UpdateMarker
+                android:id="@+id/vblgi_um"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </pl.epodreczniki.view.FixedAspectRatioFrameLayout>
+
+        <pl.epodreczniki.view.FixedAspectRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"            
+            epo:ratio="1.41" >
+
+            <RelativeLayout
+                android:id="@+id/vblgi_ll_coverReverse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"                               
+                android:background="@drawable/book_rewers" >
+
+                <LinearLayout
+                    android:id="@+id/vblgi_ll_top_btns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"                    
+                    android:layout_alignParentTop="true" >
+
+                    <ImageButton
+                        android:id="@+id/vblgi_rewers_iv_back"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:contentDescription="@string/btn_rewers_iv_back"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ico_back_med" />
+
+                    <ImageButton
+                        android:id="@+id/vblgi_rewers_iv_download_update"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:contentDescription="@string/btn_rewers_iv_download_update"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ico_download_med" />
+
+                    <ImageButton
+                        android:id="@+id/vblgi_rewers_iv_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:contentDescription="@string/btn_details"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ico_delete_med" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/vblgi_ll_bottom_btns"
+                    android:layout_below="@id/vblgi_ll_top_btns"
+                    android:layout_margin="4dp"
+                    android:layout_centerInParent="true" >
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" 
+                        />                    
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4" >
+
+                        <TextView
+                            android:id="@+id/vblgi_tv_progress_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <!-- <ProgressBar
+                            android:id="@+id/vblgi_pb_del"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY" /> -->
+
+                        <pl.epodreczniki.view.CircularProgressBar
+                            android:id="@+id/vblgi_pb_coverRevers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:id="@+id/vblgi_rewers_iv_read"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:contentDescription="@string/btn_read"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ico_read_biggest" />
+                    </FrameLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" 
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/vblgi_ll_bottom_btns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_alignParentBottom="true" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/vblgi_rewers_iv_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:contentDescription="@string/btn_details"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ico_options_med"
+                        tools:ignore="NestedWeights" />
+                </LinearLayout>
+            </RelativeLayout>
+        </pl.epodreczniki.view.FixedAspectRatioFrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/vblgi_tv_bookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vblgi_tv_bookSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

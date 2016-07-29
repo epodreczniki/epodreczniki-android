@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- TODO inne opcje, eksternalizacja stringow -->
+    <item 
+        android:title="@string/add_note"
+        android:id="@+id/m_notes_add"
+        android:icon="@drawable/ico_add_note_small"
+        />
+    <item
+        android:title="@string/add_bookmark"
+        android:id="@+id/m_notes_add_bookmark"    
+        android:icon="@drawable/ico_add_bookmark_small"    
+        />
+    <item 
+        android:title="@string/copy"        
+        android:id="@+id/m_notes_copy"
+        />           
+</menu>

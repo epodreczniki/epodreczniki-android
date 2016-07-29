@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="text_color_default">#ffffff</color>
+    <color name="text_color_inverse">#00000C</color> -->
+    <!-- <color name="list_row_default_bg">#86d3f6</color> -->
+    <!-- <color name="list_row_pressed_bg">#008cef</color>
+    <color name="list_row_selected_bg">#ffffff</color> -->
+	<color name="overlay">#99000000</color>
+	<color name="note_green">#43bb00</color>
+	<color name="note_blue">#5da5d9</color>
+	<color name="note_red">#ec0c00</color>
+	<color name="bookmark_blue">#9fddf6</color>
+	<color name="bookmark_green">#a9d6a4</color>
+	<color name="bookmark_red">#fac9cf</color>
+	<color name="bookmark_yellow">#fff49a</color>
+	<color name="button_selected">#33B5E5</color>
+	
+</resources>

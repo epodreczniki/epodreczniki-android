@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="RtlHardcoded" severity="ignore" />
+    <issue id="RtlSymmetry" severity="ignore" />
+    <issue id="AddJavascriptInterface" severity="ignore" />
+    <issue id="RelativeOverlap" severity="ignore" />
+    <issue id="InconsistentLayout">
+        <ignore path="res/layout/a_login_list.xml" />
+        <ignore path="res/layout-sw600dp/a_login_list.xml" />
+        <ignore path="res/layout-sw600dp-land/a_login.list.xml" />
+    </issue>
+</lint>

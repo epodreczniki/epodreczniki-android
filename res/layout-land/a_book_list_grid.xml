@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/view_paddings_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >    
+
+	<TextView
+        android:id="@+id/ablg_tv_no_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_books" 
+        />
+
+    <GridView
+        android:id="@+id/ablg_gv_data"
+        style="@style/gridView_spacingBettweenRows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth" >
+    </GridView>
+</LinearLayout>

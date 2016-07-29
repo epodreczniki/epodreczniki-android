@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+           
+    >
+    <!-- TODO najprawdopodobniej to wyleci jak spis będzie w tabie -->
+    <!-- <TextView
+        android:id="@+id/ft_header"
+        android:layout_width="match_parent"        
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/toc"        
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        /> -->
+    <LinearLayout android:id="@+id/ft_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"                
+        >
+        <ImageButton
+            android:id="@+id/ft_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:contentDescription="@string/toc_back"            
+            android:scaleType="centerInside"
+            android:src="@drawable/ico_toc_back"
+            />
+        <View
+            android:id="@+id/ft_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="?android:attr/dividerVertical"            
+            />
+        <TextView
+            android:id="@+id/ft_current"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceMedium"            
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ft_top">
+        <ListView
+            android:id="@+id/ft_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            />        
+        <ProgressBar 
+            android:id="@+id/ft_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

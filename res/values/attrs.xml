@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <declare-styleable name="FixedAspectRatio">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <style name="view_paddings">
+        <item name="android:padding">@dimen/padding_value</item>
+    </style>
+
+    <style name="view_paddings_top_bottom">
+        <item name="android:paddingTop">@dimen/padding_value</item>
+        <item name="android:paddingBottom">@dimen/padding_value</item>
+    </style>
+
+    <style name="gridView_spacingBettweenRows">
+        <item name="android:verticalSpacing">@dimen/verticalSpacing</item>
+        <item name="android:horizontalSpacing">@dimen/horizontalSpacing</item>
+    </style>
+
+    <style name="view_paddings_grid">
+        <item name="android:padding">@dimen/padding_value_grid</item>
+    </style>    
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:epo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >	
+    
+    <pl.epodreczniki.view.BackgroundProgressBar
+        android:id="@+id/vbli_bpb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/vbli_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_value"
+            android:singleLine="true" />
+
+        <FrameLayout
+            android:id="@+id/vbli_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <!-- <ProgressBar
+                android:id="@+id/vbli_pb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /> -->                        
+
+            <ImageButton
+                android:id="@+id/vbli_ib_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:contentDescription="@string/btn_details"
+                android:scaleType="center"
+                android:src="@drawable/ico_options_small" />
+            
+           <!--  <pl.epodreczniki.view.CircularProgressBar
+                android:id="@+id/vbli_cp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                /> -->
+        </FrameLayout>
+    </LinearLayout>
+	<pl.epodreczniki.view.UpdateMarker
+	    android:id="@+id/vbli_um" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"/>
+</FrameLayout>

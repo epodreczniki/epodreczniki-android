@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    <CheckBox
+        android:id="@+id/fmp_manage_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:text="@string/book_management"
+        android:ems="10"
+        />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="8dp"
+        android:background="?android:attr/listDivider"/>
+    
+    <CheckBox
+        android:id="@+id/fmp_change_password_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"                            
+        android:text="@string/change_password" 
+        />    
+    <EditText
+        android:id="@+id/fmp_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:enabled="false"
+        android:inputType="textPassword"        
+        />
+    <EditText 
+        android:id="@+id/fmp_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:enabled="false"
+        android:inputType="textPassword"
+        />          
+        
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        style="?android:attr/buttonBarStyle"       
+        >
+        <Button
+            android:id="@+id/fmp_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:ems="5"
+            android:text="@string/cancel" 
+            />
+        <Button
+            android:id="@+id/fmp_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:ems="5"
+            android:text="@string/ok" 
+            />
+    </LinearLayout>
+
+</LinearLayout>

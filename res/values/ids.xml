@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="grid_item_prev_id" />
+    <item type="id" name="show_animation"/>
+    <item type="id" name="hide_animation"/>  
+    <item type="id" name="direction" />    
+    <item type="id" name="qr_success"/>
+    <item type="id" name="qr_fail"/>
+    <item type="id" name="webview_module_id"/>
+    <item type="id" name="webview_page_id"/>
+    <item type="id" name="webview_page_idx"/>
+</resources>

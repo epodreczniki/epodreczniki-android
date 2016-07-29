@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/fdcd_header" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dev_confirm_dialog_message"        
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fdcd_header"
+        style="?android:attr/buttonBarStyle"
+        >
+        <Button 
+            android:id="@+id/fdcd_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+			android:singleLine="true"            
+            android:text="@string/no"/>
+        <Button
+            android:id="@+id/fdcd_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:singleLine="true"
+            android:text="@string/yes" 
+            />
+    </LinearLayout>    
+
+</RelativeLayout>

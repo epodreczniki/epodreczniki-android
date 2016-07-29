@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <WebView
+        android:id="@+id/ar_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/ar_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:id="@+id/ar_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:background="#99FFFFFF"        
+		android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ar_nav_a_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc_nav_a_minus"
+            android:src="@drawable/a_minus" />
+
+        <ImageButton
+            android:id="@+id/ar_nav_a_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc_nav_a_plus"
+            android:src="@drawable/a_plus" />
+
+        <ImageButton
+            android:id="@+id/ar_nav_toc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/desc_nav_toc"
+            android:src="@drawable/toc" />
+        
+        <ImageButton 
+            android:id="@+id/ar_nav_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/arrowhead_left"
+            android:background="@null"
+            android:contentDescription="@string/desc_nav_prev"
+            />        
+            
+        <ImageButton 
+            android:id="@+id/ar_nav_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/arrowhead_right"
+            android:background="@null"
+            android:contentDescription="@string/desc_nav_next"
+            />                    
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- main -->
+    <dimen name="padding_value">8dp</dimen>
+    
+    <!-- grid values -->
+    <!-- padding_value_grid, verticalSpacing: space between rows -->
+    <dimen name="padding_value_grid">50dp</dimen>
+    <dimen name="verticalSpacing">50dp</dimen>
+    <dimen name="horizontalSpacing">50dp</dimen>
+    <dimen name="reader_button_size">48dp</dimen>
+    <dimen name="reader_nav_button_size">44dp</dimen>
+
+</resources>

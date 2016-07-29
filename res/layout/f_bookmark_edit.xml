@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 0 progress bar -->
+
+    <LinearLayout
+        android:id="@+id/fbed_ll_page0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/please_wait" />
+    </LinearLayout>
+    <!-- 1 edit -->
+
+    <LinearLayout
+        android:id="@+id/fbed_ll_page1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        >
+
+        <RadioGroup
+            android:id="@+id/fbed_rg_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/fbed_rb_green"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:button="@drawable/radio_bookmark_green" />
+
+            <RadioButton
+                android:id="@+id/fbed_rb_blue"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:button="@drawable/radio_bookmark_blue" />
+
+            <RadioButton
+                android:id="@+id/fbed_rb_red"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:button="@drawable/radio_bookmark_red" />
+
+            <RadioButton
+                android:id="@+id/fbed_rb_yellow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                android:button="@drawable/radio_bookmark_yellow" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/fbed_et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_subject"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/fbed_ib_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ico_delete_black_small" />
+
+            <Button
+                android:id="@+id/fbed_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"                
+                android:background="@null"
+                android:maxLines="1"
+                android:text="@string/save"
+                android:textColor="@color/button_black" />
+
+            <Button
+                android:id="@+id/fbed_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/fbed_btn_save"
+                android:background="@null"
+                android:maxLines="1"
+                android:text="@string/cancel"
+                android:textColor="@color/button_black" />
+        </RelativeLayout>
+    </LinearLayout>    
+    <!-- 2 confirm delete -->
+	<LinearLayout 
+	    android:id="@+id/fbed_ll_page2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="8dp"
+	    android:visibility="gone">
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/confirm_delete_note"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <Button
+                android:id="@+id/fbed_btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:textColor="@color/button_black"
+                android:text="@string/yes" />
+
+            <Button
+                android:id="@+id/fbed_btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fbed_btn_yes"
+                android:background="@null"
+                android:textColor="@color/button_black"
+                android:text="@string/no" />
+        </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

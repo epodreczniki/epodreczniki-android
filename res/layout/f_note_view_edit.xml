@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 0 progress bar -->
+
+    <ProgressBar
+        android:id="@+id/fnve_ll_page0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!-- 1 view -->
+
+    <LinearLayout
+        android:id="@+id/fnve_ll_page1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" 
+        >
+        <!-- android:layout_margin="8dp"> -->
+
+        <FrameLayout
+            android:id="@+id/fnve_fl_subject_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp" 
+            >
+            <TextView
+            	android:id="@+id/fnve_tv_subject"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:layout_margin="8dp"           
+            	android:ellipsize="end"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+        </FrameLayout>        
+
+        <TextView
+            android:id="@+id/fnve_tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:maxLines="6"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" >
+
+            <ImageButton
+                android:id="@+id/fnve_ib_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ico_delete_black_small" />
+            <!-- TODO inna ikona -->
+
+            <ImageButton
+                android:id="@+id/fnve_ib_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fnve_ib_delete"
+                android:background="@null"
+                android:contentDescription="@string/edit"
+                android:src="@drawable/ico_note_edit_small" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 2 edit -->
+
+    <LinearLayout
+        android:id="@+id/fnve_ll_page2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:visibility="gone" >
+		<RadioGroup 
+		    android:id="@+id/fnve_rg_color"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton 
+                android:id="@+id/fnve_rb_green"
+                android:layout_width="48dp"
+            	android:layout_height="48dp"
+            	android:button="@drawable/radio_green"
+            	android:layout_margin="4dp"
+            	/>
+            <RadioButton
+                android:id="@+id/fnve_rb_blue" 
+                android:layout_width="48dp"
+            	android:layout_height="48dp"
+            	android:button="@drawable/radio_blue"
+            	android:layout_margin="4dp"
+            	/>
+            <RadioButton 
+                android:id="@+id/fnve_rb_red"
+                android:layout_width="48dp"
+            	android:layout_height="48dp"
+            	android:button="@drawable/radio_red"
+            	android:layout_margin="4dp"
+            	/>
+		</RadioGroup>
+        <EditText
+            android:id="@+id/fnve_et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:hint="@string/enter_subject"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/fnve_et_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:gravity="top"
+            android:hint="@string/enter_value"
+            android:lines="4" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <Button
+                android:id="@+id/fnve_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/button_black"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/fnve_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fnve_btn_save"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColor="@color/button_black"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 3 confirm -->
+
+    <LinearLayout
+        android:id="@+id/fnve_ll_page3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/confirm_delete_note"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <Button
+                android:id="@+id/fnve_btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:textColor="@color/button_black"
+                android:text="@string/yes" />
+
+            <Button
+                android:id="@+id/fnve_btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fnve_btn_yes"
+                android:background="@null"
+                android:textColor="@color/button_black"
+                android:text="@string/no" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

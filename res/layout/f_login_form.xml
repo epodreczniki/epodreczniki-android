@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText 
+        android:id="@+id/flf_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:maxEms="10"
+        android:inputType="none"    
+        android:enabled="false"    
+        />
+    <EditText 
+        android:id="@+id/flf_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:maxEms="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        />
+    <Button
+        android:id="@+id/flf_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:text="@string/login" 
+        />    
+</LinearLayout>

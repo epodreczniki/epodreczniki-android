@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DevMainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/adm_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/adm_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"            
+            />
+
+        <TextView
+            android:id="@+id/adm_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"            
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/adm_btn_bar"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_info"
+        android:layout_centerHorizontal="true" >
+		<Button
+		    android:id="@+id/adm_btn_cut"
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ucinam_to"
+		    />
+        <Button
+            android:id="@+id/adm_btn_scan"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan" />
+
+        <Button
+            android:id="@+id/adm_btn_open"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open" />
+        <Button
+            android:id="@+id/adm_btn_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_download"            
+            />
+    </LinearLayout>
+    
+    <Switch
+        android:id="@+id/adm_sw_teacher"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_btn_bar"
+        android:text="@string/show_teacher_content"       
+        android:textOn="@string/yes"
+        android:textOff="@string/no"
+        />
+
+    <ProgressBar
+        android:id="@+id/adm_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"        
+        android:layout_below="@id/adm_info" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adm_sw_teacher"
+        >
+        <EditText
+        	android:id="@+id/adm_et_css"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:hint="@string/alternative_css"
+        />
+        <Button
+            android:id="@+id/adm_btn_css_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_css"            
+            />
+    </LinearLayout>    
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">E-podręczniki LITE</string>
+
+    <!-- activity titles -->
+    <string name="title_activity_terms">Regulamin</string>
+    <string name="title_activity_books_list">Lista e-podręczników</string>
+    <string name="title_activity_book_details">Szczegóły e-podręcznika</string>
+    <string name="title_activity_reader">Czytnik</string>
+    <string name="title_activity_problem_with_storage">Problem z pamięcią</string>
+    <string name="title_activity_about">O aplikacji</string>
+    <string name="title_activity_problem_with_internet">Brak połączenia z Internetem</string>
+    <string name="title_activity_settings">Ustawienia</string>
+    <!-- <string name="abed_tv_title_label">Tytuł</string> -->
+    <string name="abed_tv_authors_label">Autorzy</string>
+    <string name="abed_tv_abstract_label">O e-podręczniku</string>
+    <string name="abed_tv_school_label">Szkoła</string>
+    <string name="abed_tv_class_label">Klasa</string>
+    <string name="abed_tv_subject_label">Przedmiot</string>
+    <string name="abed_tv_license_label">Licencja</string>
+
+    <!-- buttons content description -->
+    <!-- <string name="btn_callTerms">Przejście do ekranu z regulaminem</string> -->
+    <string name="btn_progressbar">Postęp</string>
+    <string name="btn_download">Uruchomienie pobierania e-podręcznika</string>
+    <string name="btn_delete">Usuwanie e-podręcznika</string>
+    <string name="btn_read">Przejście do czytnika e-podręcznika</string>
+    <string name="btn_settings">Przejście do ekranu z dodatkowymi opcjami</string>
+    <string name="btn_acceptTerms">Akceptacja regulaminu</string>
+    <string name="btn_details">Przejście do ekranu szczegółów e-podręcznika</string>
+    <string name="btn_rewers_iv_back">Powrót do widoku okładki</string>
+    <string name="btn_rewers_iv_download_update">Uruchomienie pobieranie/aktualizacji e-podręcznika</string>
+
+    <!-- buttons label -->
+    <string name="btn_label_accept">Akceptuję</string>
+    <!--
+    <string name="abpl_btn_delete_desc">Usuń</string>
+    <string name="abpl_btn_change_book_state_desc">Zmień stan</string> 
+    <string name="aa_btn_showTerms">Pokaż regulamin</string>
+    <string name="apwi_btn_runApp">Rozpocznij korzystanie z aplikacji</string>
+    -->
+
+
+    <!-- textview content -->
+    <string name="at_tv_content_terms" tools:ignore="Typos">        							   Regulamin aplikacji mobilnej.\n\n
+        							   Aplikacja mobilna E-podręczniki LITE, stworzona na potrzeby platformy epodreczniki.pl, administrowanej przez Instytut Chemii Bioorganicznej PAN - Poznańskie Centrum Superkomputerowo-Sieciowe (IChB PAN PCSS), udostępnia e-podręczniki oraz uzupełniające zasoby metodyczne i dydaktyczne tworzone w ramach projektu e-podręczniki do kształcenia ogólnego – projektu współfinansowanego przez Unię Europejską w ramach Europejskiego Funduszu Społecznego.\n\n 
+									   Informujemy, że w czasie korzystania z serwisu, na naszych serwerach w sposób automatyczny gromadzone są następujące typy informacji o użytkownikach i ich aktywności w systemie:\n\n 
+									   \t- logi, zawierające takie informacje jak adres IP, data i czas korzystania z platformy, lista odwiedzonych stron systemu, przy czym logi nie zawierają danych osobowych;\n
+									   \t- ustawienia personalne, które umożliwiają rozpoznanie preferowanych przez użytkownika ustawień aplikacji, zaś ich pobieranie przez użytkownika jest uzależnione od indywidualnych ustawień aplikacji;\n\n
+									   Na podstawie logów i ustawień generowane są dane statystyczne przydatne dla określenia profilu użytkownika aplikacji i jego potrzeb odnośnie aplikacji. Dane te zostaną wykorzystane do wzbogacenia zawartości aplikacji i poprawy jej funkcjonalności, a także do monitorowania i administrowania ruchem na platformie oraz do celów naukowo-badawczych.\n\n
+									   Używając ustawień personalnych w wyżej opisany sposób nie identyfikujemy tożsamości użytkowników na podstawie informacji przechowywanych w ustawieniach.\n\n									  
+									   Dane dotyczące użytkowników epodreczniki.pl gromadzone na serwerach IChB PAN PCSS są zabezpieczone przed nieautoryzowanym dostępem i nie będą udostępniane osobom trzecim. Dostęp do aplikacji nie wymaga logowania, a więc podawania żadnych danych osobowych. Dostęp do aplikacji jest ogólnie dostępny.\n\n									    
+									   Materiały dostępne na platformie epodreczniki.pl poprzez aplikację mobilną opublikowane zostaną zgodnie z zapisami Uchwały Rady Ministrów z dnia 3 kwietnia 2012 r. w sprawie rządowego programu kompetencji uczniów i nauczycieli w zakresie stosowania technologii informacyjno-komunikacyjnych „Cyfrowa szkoła”, która przewiduje, że zasoby edukacyjne wytworzone w ramach Projektu będą miały charakter otwarty, co oznacza powszechny, swobodny i darmowy dostęp w dowolnym miejscu i czasie, w tym dostęp bez ograniczeń lub zabezpieczeń technicznych oraz dowolność wykorzystania. W przypadku zasobów stanowiących utwory, przedmioty praw pokrewnych otwartość zasobów oznacza rozpowszechnianie na podstawie licencji Creative Commons Uznanie Autorstwa (CC-BY 3.0) lub innej wolnej licencji na nieograniczone, nieodpłatne i niewyłączne korzystanie z zasobów oraz ich ewentualnych opracowań, zarówno do celów komercyjnych, jak i niekomercyjnych.\n\n
+ 									   Danych zbieranych automatycznie nie można zmienić ani usunąć.\n\n 
+									   Korzystając z aplikacji epodreczniki.pl wyrażają Państwo zgodę na warunki określone powyżej.</string>
+    <string name="aa_tv" tools:ignore="TypographyDashes">									   	Aplikacja E-podręczniki LITE jest mobilnym narzędziem wspomagającym pracę z serwisem internetowym epodreczniki.pl, tworzonym i administrowanym przez Instytut Chemii Bioorganicznej PAN - Poznańskie Centrum Superkomputerowo-Sieciowe (IChB PAN PCSS), udostępniającym e-podręczniki oraz uzupełniające zasoby metodyczne i dydaktyczne tworzone w ramach projektu "e-podręczniki do kształcenia ogólnego" -- projektu współfinansowanego przez Unię Europejską w ramach Europejskiego Funduszu Społecznego.\n
+										Aplikacja umożliwia pracę z zasobami serwisu epodreczniki.pl w sposób nie wymagający stałego dostępu do Internetu na urządzeniach mobilnych z systemem Android/Windows Phone/iOS.\n\n
+										Główne funkcje aplikacji to:\n
+											- wyświetlanie aktualnej listy podręczników;\n
+											- wyświetlanie szczegółowych informacji na temat podręczników;\n
+											- pobieranie i zapisywanie podręczników w pamięci urządzenia mobilnego;\n
+											- zarządzanie podręcznikami (usuwanie, uaktualnianie);\n
+											- wyświetlanie treści pobranych podręczników na urządzeniu mobilnym.\n\n
+										Więcej informacji o projekcie oraz zasobach edukacyjnych udostępnianych w jego ramach w serwisie epodreczniki.pl.    </string>
+    <string name="abed_tv_book_size">Rozmiar e-podręcznika</string>
+    <string name="abed_tv_book_version">Wersja e-podręcznika</string>
+    <string name="apwi_tv_title">Brak połączenia z Internetem</string>
+    <string name="apwi_tv_question">Do pierwszego uruchomienia wymagane jest połączenie z internetem, aby aplikacja mogła pobrać dane. \n\nAby przejść do ustawień urządzenia naciśnij poniższy przycisk.</string>
+    <string name="apwi_tv_connection_detection_in_progress">Trwa wykrywanie połączenia.</string>
+    <string name="apws_tv_message">Aplikacja wymaga pamięci zewnętrznej do poprawnego działania. Jeśli Twoje urządzenie nie posiada wbudowanej pamięci zewnętrznej upewnij się, że zamontowana jest karta pamięci i uruchom aplikację ponownie.</string>
+
+    <!-- dialog -->
+    <string name="dialog_title_terms_confirm">Potwierdź</string>
+    <string name="dialog_message_terms_confirm">Czy na pewno akceptujesz warunki?</string>
+    <string name="dialog_message_delete_book_confirm">Czy na pewno chcesz usunąć ten e-podręcznik?</string>
+    <string name="dialog_ans_yes">Tak</string>
+    <string name="dialog_ans_no">Nie</string>
+    <string name="abla_pd_listRefresh">Trwa odświeżanie listy</string>
+    <string name="abla_pd_pleaseWait">Proszę czekać</string>
+
+    <!-- imageview -->
+    <string name="as_iv_splash">Obraz ekranu startowego</string>
+
+    <!-- menu -->
+    <string name="mbl_settings">Ustawienia aplikacji</string>
+    <!-- <string name="mbl_moreOptions">Więcej opcji</string> -->
+    <string name="mbl_viewCovers">Widok okładki</string>
+    <string name="mbl_viewList">Widok listy</string>
+    <string name="mbl_refreshBooksList">Odśwież listę e-podręczników</string>
+    <!-- <string name="mbl_downloadAllBooks">Pobierz wszystkie e-podręczniki</string> -->
+    <!-- <string name="mbl_updateBooksList">Aktualizuj wszystkie e-podręczników</string> -->
+    <!-- <string name="mbl_removeAllBooks">Usuń wszystkie e-podręczniki</string> -->
+    <string name="mbl_about">O aplikacji</string>
+    <!-- <string name="mbl_viewGrid">Widok z siatką wszystkich e-podręczników</string> -->
+
+
+    <!-- others -->
+    <!--
+    <string name="logo">Logo</string>
+    <string name="logo_strip">Logo strip</string>
+    -->
+    <string name="cover">Okładka</string>
+    <!--
+    <string name="books_dir">books</string>
+    <string name="covers_dir">covers</string>
+    -->
+    <!-- <string name="hello_world">Hello world!</string> -->
+    <!-- <string name="btn_details_label">Szczegóły</string> -->
+    <!-- <string name="connection_detection_in_progress">Trwa wykrywanie połączenia.</string> -->
+    <!-- <string name="apws_message">Aplikacja wymaga pamięci zewnętrznej do poprawnego działania. Jeśli Twoje urządzenie nie posiada wbudowanej pamięci zewnętrznej, upewnij się, że zamontowana jest karta pamięci i uruchom aplikację ponownie.</string> -->
+    <!-- <string name="as_option_title_allow_mobile_data">Użyj sieci komórkowej</string> -->
+    <!-- <string name="as_title_settings">Pobieranie danych</string> -->
+    <string name="fud_btn_ok_label">Uaktualnij</string>
+    <string name="fud_btn_cancel_label">Zrezygnuj</string>
+    <!-- <string name="fud_question">Czy na pewno uaktualnić e-podręcznik do następującej wersji?</string> -->
+
+    <string name="fdmpd_title">Pobranie danych</string>
+    <string name="fdmpd_label">Dane nie mogą zostać pobrane. Włącz aplikację odpowiedzialną za pobieranie danych poprzez przejście do jej ustawień za pomocą naciśnięcia poniższego przycisku \'Włącz aplikację\'. Po jej włączeniu spróbuj ponownie.</string>
+    <string name="fdmpd_btn_ok_label">Włącz aplikację</string>
+    <string name="fdmpd_btn_cancel_label">Anuluj</string>
+    <string name="th_downloadingBook">Pobieranie e-podręcznika</string>
+    <string name="th_downloadingCover">Pobieranie okładki</string>
+
+    <!-- preferences -->
+    <string name="pref_option_title_allow_mobile_data">Użyj sieci komórkowej</string>
+    <string name="pref_title_settings">Pobieranie danych</string>
+    <!-- scrollview -->
+    <string name="sv">Kontrolka do przewijania widoku</string>
+
+    <!-- toast -->
+    <string name="toast_bookStartPreparingDownload">Pobieranie e-podręcznika</string>
+    <!-- <string name="toast_bookStartDownloading">Nastąpiło rozpoczęcie pobierania e-podręcznika</string> -->
+    <!-- <string name="toast_bookPrepareToReadState">Trwa przygotowanie e-podręcznika do czytania</string> -->
+    <!-- <string name="toast_bookStopDownload">Pobieranie zostało anulowane.</string> -->
+    <!-- <string name="toast_bookReadyToRead">E-podręcznik jest gotowy do czytania.</string> -->
+    <string name="toast_bookDelete">E-podręcznik jest usuwany.</string>
+    <!-- <string name="toast_bookDeleteDone">E-podręcznik został usunięty.</string> -->
+    <!-- <string name="action_settings">Ustawienia</string> -->
+    <string name="title_update_confirm">Potwierdź aktualizację</string>
+    <string name="completion_service_download_failed">Pobieranie e-podręcznika zakończyło się niepowodzeniem.</string>
+    <string name="fud_new_version">Nowa wersja:</string>
+    <string name="fud_size">Rozmiar:</string>
+    <string name="fud_license">Licencja:</string>
+    <!-- <string name="fud_owned_version">Posiadana wersja:</string> -->
+    <!-- <string name="toast_dataDownloadOk">Pobieranie danych zakończyło się sukcesem.</string> -->
+    <string name="es_toast_preparingBookFailed">Przygotowywanie e-podręcznika zakończyło się niepowodzeniem.</string>
+    <string name="ms_toast_downloadingBookFailed">Nie udało się pobrać listy e-podręczników.</string>
+    <string name="not_enough_space">Nie można pobrać e-podręcznika - za mało miejsca.</string>
+    <string name="pref_option_summary_allow_mobile_data">Zaznacz tę opcję jeśli zezwalasz na pobieranie e-podręczników przy użyciu sieci komórkowej (może się to wiązać z opłatami za transfer danych). Zmiana ustawienia nie stosuje się do transferów w toku.</string>
+    <string name="net_dialog_title">Potwierdź transfer danych</string>
+    <string name="net_dialog_message">Dostępna jest tylko sieć komórkowa.\nCzy chcesz jednorazowo zezwolić na użycie tej sieci do pobrania danych?</string>
+    <string name="pref_check_for_updates_on_start_title">Aktualizacje</string>
+    <string name="pref_check_for_updates_on_start_summary">Sprawdzaj dostępność aktualizacji treści przy starcie aplikacji.</string>    
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="toast_mobile_network_not_allowed">Brak zezwolenia na użycie sieci komórkowej.</string>
+    <string name="toast_cannot_play">Nie można odtworzyć. Upewnij się, że masz połączenie z siecią.</string>
+    <string name="toast_newer_app_required">Wymagana nowsza wersja aplikacji.</string>
+    <string name="toast_book_prepare">Przygotowywanie e-podręcznika. Może to potrwać kilka minut.</string>
+    <string name="desc_nav_a_minus">Zmniejsz czcionkę</string>
+    <string name="desc_nav_a_plus">Zwiększ czcionkę</string>
+    <string name="desc_nav_toc">Spis treści</string>
+    <string name="desc_nav_prev">Poprzedni moduł</string>
+    <string name="desc_nav_next">Następny moduł</string>
+    <string name="action_settings">Settings</string>
+    <string name="toc_back">Poziom wyżej</string>
+    <string name="toc_item_open">Otwórz</string>
+    <string name="content_desc_drawer_open">Otwórz spis treści</string>
+    <string name="content_desc_drawer_close">Zamknij spis treści</string>
+    <string name="title_activity_dev_main">E-podręczniki TEST</string>
+    <string name="scan">Skanuj</string>
+    <string name="open">Otwórz</string>
+    <string name="title_activity_womi_player">WomiPlayerActivity</string>
+    <string name="th_downloading_dev">Pobieranie testowego e-podręcznika</string>
+    <string name="cancel_download">Anuluj</string>
+    <string name="show_teacher_content">Pokazuj treści dla nauczyciela</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="dev_confirm_dialog_message">Pobranie nowych treści spowoduje usunięcie starych. Czy chcesz kontynuować?</string>
+    <string name="please_wait" tools:ignore="TypographyEllipsis">Proszę czekać...</string>
+    <string name="enter_subject">Podaj tytuł</string>
+    <string name="enter_value">Podaj treść</string>
+    <string name="add">Dodaj</string>
+    <string name="cancel">Anuluj</string>
+    <string name="no_notes_present">Brak notatek.</string>
+    <string name="delete">Usuń</string>
+    <string name="edit">Edytuj</string>
+    <string name="save">Zapisz</string>
+    <string name="confirm_delete_note">Czy na pewno usunąć?</string>
+    <string name="notes">Notatki</string>
+    <string name="add_note">Dodaj notatkę</string>
+    <string name="copy">Kopiuj</string>
+    <string name="title_activity_login_list">LoginListActivity</string>
+    <string name="title_activity_check_login">CheckLoginActivity</string>
+    <string name="login">Zaloguj</string>
+    <string name="title_activity_login_form">LoginFormActivity</string>
+    <string name="m_my_profile">Ustawienia użytkownika</string>
+    <string name="m_logout">Wyloguj się</string>
+    <string name="add_bookmark">Dodaj zakładkę</string>
+    <string name="notes_and_bookmarks">Notatki i zakładki</string>
+    <string name="no_books">Brak e-Podręczników do wyświetlenia</string>
+    <string name="book_management">Zarządzanie e-podręcznikami</string>
+    <string name="change_password">Zmień hasło</string>
+    <string name="password">Hasło</string>
+    <string name="confirm_password">Potwierdź hasło</string>
+    <string name="ok">OK</string>
+    <string name="back_to_list">Powrót do listy e-podręczników</string>
+    <string name="hide_navigation">Schowaj nawigację</string>
+    <string name="alternative_css">Alternatywny css</string>
+    <string name="switch_css">Podmień</string>
+    <string name="library_view">Widok biblioteki</string>
+    <string name="list">Lista</string>
+    <string name="gallery">Galeria</string>
+    <string name="book_filter">Filtr e-podręczników</string>
+    <string name="education_level">Etap edukacji</string>
+    <string name="education_class">Klasa</string>
+    <string name="login_without_password">Loguj się bez hasła</string>
+    <string name="creation_of_bookmark_will_cause">Utworzenie zakładki spowoduje usunięcie co najmniej jednej notatki. Czy chcesz kontynuować?</string>
+    <string name="add_account">Dodaj konto</string>
+    <string name="choose_user_name_to_login">Wybierz nazwę użytkownika aby się zalogować.</string>
+    <string name="open_book">Otwórz e-podręcznik</string>
+    <string name="cont">Dalej</string>
+    <string name="user_name">Nazwa użytkownika</string>
+    <string name="show_note_content">Pokaż zawartość notatki</string>
+    <string name="login_screen">Ekran logowania</string>
+    <string name="ucinam_to">Ucinam</string>
+
+</resources>

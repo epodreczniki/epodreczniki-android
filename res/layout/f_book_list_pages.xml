@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    xmlns:epo="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/padding_value" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fblp_fl"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:weightSum="5" >
+        
+        <pl.epodreczniki.view.A4FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3.85" >
+
+            <pl.epodreczniki.view.ImageProgressBar
+                android:id="@+id/fblp_iv_bookCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/cover"
+                android:src="@drawable/cover"
+                />
+            
+            <pl.epodreczniki.view.UpdateMarker 
+                android:id="@+id/fblp_um"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            
+        </pl.epodreczniki.view.A4FrameLayout>
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.15"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/fblp_tv_bookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fblp_tv_bookSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fblp_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/padding_value"
+        android:layout_marginTop="@dimen/padding_value" >
+
+        <!-- <ProgressBar
+            android:id="@+id/fblp_pb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" /> -->
+
+        <ImageButton
+            android:id="@+id/fblp_ib_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@string/btn_details"
+            android:src="@drawable/ico_options_small" />
+        
+        <pl.epodreczniki.view.CircularProgressBar
+                android:id="@+id/fblp_cpb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp" 
+                />
+        
+    </FrameLayout>
+
+</RelativeLayout>
